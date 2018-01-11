@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Comic Viewer</string>
+    <string name="spinner">randomspinner</string>
+
+    <string name="zerohelp"><![CDATA[<b>Comic Selector:</b>]]> Select which comic strip to view.</string>
+    <string name="onehelp"><![CDATA[<b>First Comic:</b>]]> Navigate to the first comic in the currently selected strip, in chronological order.</string>
+    <string name="twohelp"><![CDATA[<b>Previous Comic:</b>]]> Navigate to the previous comic in the currently selected strip.</string>
+    <string name="threehelp"><![CDATA[<b>Random Comic:</b>]]> Navigate to a random comic in the currently selected strip. (Not available for all comic strips)</string>
+    <string name="fourhelp"><![CDATA[<b>Next Comic</b>]]> Navigate to the next comic in the currently selected strip.</string>
+    <string name="fivehelp"><![CDATA[<b>Latest Comic</b>]]> Navigate to the latest (most recent) comic in the currently selected strip.</string>
+    <string name="sixhelp"><![CDATA[<b>Favorite:</b>]]> Mark the current comic as favorite; favorite comics can later be accessed from the List menu option.</string>
+    <string name="sevenhelp"><![CDATA[<b>Save:</b>]]> Save the current comic for offline vieweing. Saved comics can later be accessed from the List menu option.</string>
+    <string name="eighthelp"><![CDATA[<b>Bookmark:</b>]]> Bookmark the current comic; every comic strip can have a single bookmark. Bookmarking another comic in the same strip overwrites the previous bookmark.</string>
+    <string name="ninehelp"><![CDATA[<b>Last Viewed:</b>]]> Navigate to the last viewed comic. (Irregardless of strip)</string>
+    <string name="tenhelp"><![CDATA[<b>Bookmark (Navigate):</b>]]> Navigate to the bookmarked comic in the currently selected strip.</string>
+
+</resources>

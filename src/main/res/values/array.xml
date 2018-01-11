@@ -1,0 +1,11 @@
+<resources>
+    <string-array name="toolbarSpinnerItems">
+        <item>SMBC</item>
+        <item>xkcd</item>
+        <item>PvP</item>
+        <item>PhD</item>
+        <item>Dinosaur</item>
+        <item>chainsawsuit</item>
+        <item>CyAndH</item>
+    </string-array>
+</resources>

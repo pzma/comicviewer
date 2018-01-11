@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pzm.comicviewer.ArchivedComicActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/checkboxLayout">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offline Viewing"
+            android:id="@+id/checkBoxOfflineMode"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open in Viewer"
+            android:id="@+id/checkBoxViewer"
+            android:button="@null"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:layout_alignParentRight="true"
+            android:checked="false"
+            android:onClick="checkBoxOpenInViewerChange" />
+    </RelativeLayout>
+
+    <pzm.comicviewer.Utils.ZoomableImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/checkboxLayout" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxFav"
+        android:checked="false"
+        android:button="@drawable/star"
+        android:src="@drawable/star"
+        android:layout_gravity="end"
+        android:layout_alignParentRight="true"
+        android:paddingRight="16dp"
+        android:paddingTop="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/checkboxLayout" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxSave"
+        android:checked="false"
+        android:button="@drawable/save"
+        android:src="@drawable/save"
+        android:layout_gravity="end"
+        android:layout_below="@+id/checkBoxFav"
+        android:layout_alignParentRight="true"
+        android:paddingRight="16dp"
+        android:paddingTop="32dp"
+        android:layout_alignParentEnd="true" />
+
+
+    <pzm.comicviewer.Utils.LinearLayoutExtended
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:id="@+id/buttonLeftMax"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Button"
+            android:layout_weight="1"
+            android:onClick="onClickLeftMax"
+            android:src="@drawable/maxleft"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@null" />
+
+        <ImageButton
+            android:id="@+id/buttonLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Button"
+            android:layout_weight="1"
+            android:onClick="onClickLeft"
+            android:src="@drawable/left"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@null" />
+
+        <ImageButton
+            android:id="@+id/buttonRandom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Button"
+            android:layout_weight="1"
+            android:onClick="onClickRandom"
+            android:src="@drawable/rand_enabled"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@null" />
+
+        <ImageButton
+            android:id="@+id/buttonRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Button"
+            android:onClick="onClickRight"
+            android:layout_weight="1"
+            android:src="@drawable/right"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@null" />
+
+        <ImageButton
+            android:id="@+id/buttonRightMax"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Button"
+            android:layout_weight="1"
+            android:onClick="onClickRightMax"
+            android:src="@drawable/maxright"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@null" />
+
+    </pzm.comicviewer.Utils.LinearLayoutExtended>
+
+
+</RelativeLayout>

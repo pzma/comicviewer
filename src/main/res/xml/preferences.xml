@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Settings">
+
+        <CheckBoxPreference
+            android:key="offline_storage_preference"
+            android:title="Offline Storage"
+            android:summary="Save favorited comics automatically"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="remember_position_preference"
+            android:title="Remember Position"
+            android:summary="Go to last viewed comic on start"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="offline_viewing"
+            android:title="Offline Viewing"
+            android:summaryOff="View only locally saved comics (Offline)"
+            android:summaryOn="View all saved/fav comics (Online)"
+            android:defaultValue="false" />
+
+
+        <CheckBoxPreference
+            android:key="autosave_checkbox_preference"
+            android:title="Auto Save Favorites"
+            android:summaryOn="Disable auto saving comics"
+            android:summaryOff="Save all favorite comics"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

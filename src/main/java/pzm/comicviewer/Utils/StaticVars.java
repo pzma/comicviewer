@@ -16,7 +16,7 @@ public class StaticVars {
     public static final String pvpUrl = "http://pvponline.com/comic";
 
     public static final String smbcString = "SMBC";
-    public static final String smbcUrl = "http://www.smbc-comics.com/";
+    public static final String smbcUrl = "https://www.smbc-comics.com/";
 
     public static final String xkcdString = "xkcd";
     public static final String xkcdUrl = "http://xkcd.com/";

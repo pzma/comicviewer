@@ -265,7 +265,7 @@ public class MainActivity extends AppCompatActivity {
         comicPopulator.populateComic(currentComic, MainActivity.this, this);
     }
 
-    protected void bookmarkComic(View v) {
+    public void bookmarkComic(View v) {
         if (!bookmarkCheckbox.isChecked()) {
             FileUtils.unBookmarkComic(currentComic);
             return;

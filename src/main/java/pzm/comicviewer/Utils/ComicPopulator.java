@@ -277,7 +277,7 @@ public class ComicPopulator {
 
                 comic.setTitle(image.attr("title"));
 
-                URL url = new URL(urlify(image.attr("src")));
+                URL url = new URL(StaticVars.smbcUrl + urlify(image.attr("src")));
                 Bitmap bitmap = BitmapFactory.decodeStream(url.openConnection().getInputStream());
                 bitmap = getCorrectlySizedBitmap(bitmap);
 

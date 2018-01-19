@@ -49,10 +49,9 @@ public class SMBCComic extends IComic {
     @Override
     public String getLocation() {
         if (getDoc().location().equals(StaticVars.smbcUrl)) {
-            Element getUrl = getDoc().select("#twittershare").first();
-            String link = getUrl.attr("onclick");
-            String link2 = "http://www.sm" + link.substring(link.indexOf("http://sm") + 9, link.indexOf("&text"));
-            return link2;
+            Element getUrl = getDoc().select("#mobilepermalink").first();
+            String link = getUrl.attr("data-clipboard-text");
+            return link;
         }
         return getDoc().location();
     }

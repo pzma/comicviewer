@@ -48,9 +48,9 @@ public class chainsawsuitComic extends IComic {
 
     @Override
     public String getLocation() {
-        Element docUrl = doc.select(".addthis_toolbox").first();
-        String link = docUrl.attr("addthis:url");
 
+        Element docUrl = doc.select("[data-url]").first();
+        String link = docUrl.attr("data-url");
 
         return link;
     }
